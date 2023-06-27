@@ -40,7 +40,7 @@ h6 {
 
 .container {
     width: 100%;
-    max-width: 1158px;
+    max-width: 428px;
     margin: 0 auto;
     padding:0 15px 0 15px;
 }
@@ -229,13 +229,14 @@ align-items: center;
 justify-content: center;
 background: #F4F4FD;
 border-radius: 4px;
+display: none;
 }
 
 
 
 .service-item{
 padding-left: 0;
-width: calc((100% - 72px) / 4);
+width: 100%;
 
 }
 .service-item::before{
@@ -249,17 +250,22 @@ border-radius: 4px;
 
 .service-list{
    display: flex;
-   gap: 24px;
+   gap: 72px;
+   flex-wrap: wrap;
+
    
 }
 .service-name {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.72em;
     color: var(--second-text-color);
     margin-bottom: 8px;
-    
+    text-align: center;
+    text-transform: capitalize;
+    flex-direction: column;
+        align-self: stretch;
 }
 
 .service-item-text {
