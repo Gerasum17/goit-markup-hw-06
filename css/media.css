@@ -2,12 +2,13 @@
 .container{
 max-width: 428px;
 }
+
 }
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx){
     .subscribe-input {
-            
+            width: 398px;
         }
 }
 @media screen and (min-width:768px) {
@@ -125,6 +126,9 @@ max-width: 428px;
 .footer-logo-text{
 align-items: start;
 }
+.subscribe-input {
+    width: 264px;
+}
 }
 @media screen and (min-width: 768px) and (max-width: 1157px){
 .footer-logo-text {
@@ -132,13 +136,7 @@ align-items: start;
 }
 
 
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx){
-    .subscribe-input {
-            width: 264px;
-        }
-}
+
 @media screen and (min-width:1158px) {
 .header-menu {
         display: flex;
