@@ -528,13 +528,15 @@ background-color: #31d0aa;
     text-align: center;
 }
 
-
+.subscribe{
+width: 100%;
+}
 
 .form-subscribe{
 display: flex;  
-    /*gap: 24px;*/
 align-items: center;
 flex-direction: column;
+/*gap: 24px;*/
 }
 
 .form-label-subscribe{
