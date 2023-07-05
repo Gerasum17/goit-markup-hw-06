@@ -22,13 +22,13 @@
     <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
-    <!--<header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navig list">
           <a class="header-logo link" href="./index.html"
             >Web<span class="logo-part link">Studio</span></a
           >
-          
+
           <ul class="header-menu list">
             <li class="header-menu-item">
               <a class="header-menu-link current link" href="./index.html"
@@ -61,11 +61,118 @@
             </li>
           </ul>
         </address>
-        <button type="button"><svg width="32" height="22">
-            <use href="./images/icons.svg#icon-Vector-4-1"></use></svg>
+        <button
+          type="button"
+          class="mobile-menu-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-Vector-4-1"></use>
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
         </button>
       </div>
-    </header>-->
+      <!---------MOBILE-MENU---------------------------->
+      <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+        <div class="mobile-menu-studio">
+          <button class="mobile-menu-close js-close-menu">
+            <svg width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu list">
+            <li class="mobile-menu-item">
+              <a class="link mobile-menu-link mob-current" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="link mobile-menu-link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+
+            <li class="mobile-menu-item">
+              <a class="link mobile-menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="mobile-menu mobile-menu-contakt list">
+          <li>
+            <a
+              class="mobile-menu-tel mobile-contakt link"
+              href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a
+              class="mobile-menu-mail mobile-contakt link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-menu mobile-soc list hero-soc-mobile">
+          <li>
+            <a
+              class="icons-link mobile-soc-ikon link"
+              href=""
+              aria-label="instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="container-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="icons-link link"
+              href=""
+              aria-label="twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="container-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="icons-link link"
+              href=""
+              aria-label="facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="container-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-Vector"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="icons-link link"
+              href=""
+              aria-label="linkedln"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="container-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <main>
       <section class="hero">
         <div class="container hero-container">
@@ -448,7 +555,7 @@
         </div>
       </div>
     </footer>
-    <!--<div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
@@ -463,9 +570,9 @@
           name="order-form"
           autocomplete="off"
           novalidate
-        >-->
-    <!--------NAME------------------------->
-    <!--<div class="container-form-modal">
+        >
+          <!--------NAME------------------------->
+          <div class="container-form-modal">
             <label class="label-modal" for="user-name">Name</label>
             <div class="container-input-icon">
               <input
@@ -478,9 +585,9 @@
                 <use href="./images/icons.svg#icon-Vector-1"></use>
               </svg>
             </div>
-          </div>-->
-    <!--------PHONE------------------------------->
-    <!--<div class="container-form-modal">
+          </div>
+          <!--------PHONE------------------------------->
+          <div class="container-form-modal">
             <label class="label-modal" for="phone">Phone</label>
             <div class="container-input-icon">
               <input
@@ -493,9 +600,9 @@
                 <use href="./images/icons.svg#icon-Vector-2-1"></use>
               </svg>
             </div>
-          </div>-->
-    <!---------EMAIL---------------------------->
-    <!--<div class="container-form-modal">
+          </div>
+          <!---------EMAIL---------------------------->
+          <div class="container-form-modal">
             <label class="label-modal" for="email">Email</label>
             <div class="container-input-icon">
               <input name="email" class="modal-input" type="email" id="email" />
@@ -503,10 +610,10 @@
                 <use href="./images/icons.svg#icon-Vector-3-1"></use>
               </svg>
             </div>
-          </div>-->
+          </div>
 
-    <!----------COMMENT---------------------------->
-    <!--<div class="container-comment-modal">
+          <!----------COMMENT---------------------------->
+          <div class="container-comment-modal">
             <label class="label-modal" for="user-comment">Comment</label>
             <textarea
               class="textarea-modal"
@@ -518,10 +625,10 @@
             >
 Text input</textarea
             >
-          </div>-->
+          </div>
 
-    <!--------------CHECKBOX-------------------------------->
-    <!--<div class="container-checkbox-label">
+          <!--------------CHECKBOX-------------------------------->
+          <div class="container-checkbox-label">
             <input
               class="input-checkbox-label visually-hidden"
               type="checkbox"
@@ -548,7 +655,8 @@ Text input</textarea
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
 
-    <script src="./js/modal.js"></script>-->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
