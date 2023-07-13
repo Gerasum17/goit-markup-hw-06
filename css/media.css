@@ -5,6 +5,19 @@ width: 100%;
 }
 
 }
+@media screen and (min-width: 320px) and (max-width: 767px){
+.header .container {
+        min-height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        max-width: 100%;
+    }
+
+    .header .container {
+        padding-right: 5px;
+    }
+}
 @media screen and (max-width:427px){
     .mobile-menu-icon{
         gap: 24px;
@@ -26,66 +39,6 @@ width: 100%;
 .mobile-menu-open{
     display: none;
 }
-.header-container {
-    padding-top: unset;
-    padding-bottom: unset;
-}
-.header-navig{
-    display: flex;
-    margin-right: auto;
-    align-items: center;
-}
-
-.address-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    
-}
-.header{
-    padding: 0;
-}
-.header-container{
-    align-items: center;
-}
-.header-address-link {
-    font-size: 12px;
-    font-style: normal;
-    line-height: 1.2;
-    letter-spacing: 0.04em;
-    color: var(--title-text-color);
-    transition: color var(--transition);
-}
-.header-menu {
-    margin-left: 120px;
-    display: flex;
-    gap: 40px;
-}
-.header-menu-link {
-    display: flex;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--title-menu-color);
-    padding-top: 24px;
-    padding-bottom: 24px;
-    transition: color var(--transition);
-}
-
-
-    .header-menu-item {
-        position: relative;
-        color: #404bbf;
-    }
-
-    .header-menu-link {
-        font-size: 16px;
-        line-height: 1.5;
-        color: #2e2f42;
-        letter-spacing: 0.02em;
-        transition: color var(--transition);
-        position: relative;
-    }
 
     .current::after {
         content: "";
@@ -197,6 +150,71 @@ gap: 24px;
 
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
+    .header-container {
+            padding-top: unset;
+            padding-bottom: unset;
+            align-items: center;
+        }
+    
+        .header-navig {
+            display: flex;
+            margin-right: auto;
+            align-items: center;
+        }
+    
+        .address-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+    
+        }
+    
+        .header {
+            padding: 0;
+        }
+    
+        
+    
+        .header-address-link {
+            font-size: 12px;
+            font-style: normal;
+            line-height: 1.2;
+            letter-spacing: 0.04em;
+            color: var(--title-text-color);
+            transition: color var(--transition);
+        }
+    
+        .header-menu {
+            margin-left: 120px;
+            display: flex;
+            gap: 40px;
+        }
+    
+        .header-menu-link {
+            display: flex;
+            font-weight: 500;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: var(--title-menu-color);
+            padding-top: 24px;
+            padding-bottom: 24px;
+            transition: color var(--transition);
+        }
+    
+    
+        .header-menu-item {
+            position: relative;
+            color: #404bbf;
+        }
+    
+        .header-menu-link {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #2e2f42;
+            letter-spacing: 0.02em;
+            transition: color var(--transition);
+            position: relative;
+        }
 .footer-container{
 width: 584px;
 }
@@ -216,13 +234,25 @@ width: 584px;
 
 
 @media screen and (min-width:1158px) {
+    .header-container {
+            
+            align-items: center;
+        }
+        .header-logo{
+            margin-right: 76px;
+        }
+        .header-navig {
+            justify-content: space-between;
+        }
 .header-menu {
+    align-items: flex-end;
         display: flex;
         gap: 40px;
         transition: color var(--transition);
     }
 
     .header-menu-item {
+        
         position: relative;
         color: #404bbf;
     }
@@ -234,6 +264,8 @@ width: 584px;
         letter-spacing: 0.02em;
         transition: color var(--transition);
         position: relative;
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 
     .current::after {
@@ -259,7 +291,7 @@ width: 584px;
     font-style: normal;
     font-weight: 400;
     max-width: 344px;
-    margin-left: 251px;
+    margin-left: 332px;
 
 }
 
