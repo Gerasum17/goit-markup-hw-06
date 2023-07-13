@@ -1,8 +1,14 @@
 @media screen and (min-width:320px) {
 .container{
 max-width: 428px;
+
 }
 
+}
+@media screen and (max-width:427px){
+    .mobile-menu-icon{
+        gap: 24px;
+    }
 }
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
@@ -10,11 +16,52 @@ max-width: 428px;
     
 }
 @media screen and (min-width:768px) {
-.header-menu {
-        display: flex;
-        gap: 40px;
-        transition: color var(--transition);
+.container {
+    max-width: 768px;
     }
+.mobile-menu-container{
+    display: none;
+}
+.mobile-menu-open{
+    display: none;
+}
+.header-container {
+    padding-top: unset;
+    padding-bottom: unset;
+}
+.header-navig{
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+}
+.address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.header-address-link {
+    font-size: 12px;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: var(--title-text-color);
+    transition: color var(--transition);
+}
+.header-menu {
+    display: flex;
+    gap: 40px;
+}
+.header-menu-link {
+    display: flex;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--title-menu-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    transition: color var(--transition);
+}
+
 
     .header-menu-item {
         position: relative;
@@ -49,27 +96,6 @@ max-width: 428px;
     .header-menu-link:focus {
         color: #404bbf;
     }
-.header-address {
-    font-style: normal;
-    font-weight: 400;
-    max-width: 344px;
-    margin-left: 251px;
-
-}
-
-.address-list {
-    display: flex;
-    gap: 40px;
-    transition: color var(--transition);
-}
-
-.header-address-link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--title-text-color);
-    transition: color var(--transition);
-}
 
 .header-address-link:hover,
 .header-address-link:focus {
@@ -241,7 +267,6 @@ width: 584px;
     color: var(--title-text-color);
     transition: color var(--transition);
 }
-
 .header-address-link:hover,
 .header-address-link:focus {
     color: #404bbf;
