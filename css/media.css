@@ -7,7 +7,8 @@ width: 100%;
 }
 @media screen and (max-width:428px){
 .mobile-menu-link {
-        font-size: 27px;}
+        font-size: 27px;
+    }
   .mobile-soc {
       
       gap: 24px;
