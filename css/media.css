@@ -5,7 +5,15 @@ width: 100%;
 }
 
 }
-@media screen and (min-width: 320px) and (max-width: 767px){
+@media screen and (max-width:428px){
+.mobile-menu-link {
+        font-size: 27px;}
+  .mobile-soc {
+      
+      gap: 24px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width:768px){
 .header .container {
         min-height: 70px;
         display: flex;
